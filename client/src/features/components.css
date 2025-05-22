@@ -1,0 +1,15 @@
+@font-face {
+    font-family: MainHeading;
+    src: url(../assets/fonts/Coolvetica\ Rg.otf);
+}
+@font-face {
+    font-family: handwrittefont;
+    src: url(../assets/fonts/KGNeatlyPrinted.ttf);
+}
+@font-face {
+    font-family: SubHeading;
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+:root{
+
+}

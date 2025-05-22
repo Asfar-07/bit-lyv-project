@@ -1,0 +1,35 @@
+.HeaderPopUp{
+    background-color: rgba(255, 0, 0, 0.608);
+    width: 50%;
+    height: 90px;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid red;
+    transform: translateX(-50%);
+    backdrop-filter: 50px;
+    z-index: 10;
+    animation: Errormessage 1s forwards;
+}
+.HeaderPopUp i{
+    font-size: 35px;
+    margin: 0 30px;
+}
+.HeaderPopUp p{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+@keyframes Errormessage {
+    0%{
+        transform: translate(-50%,0px);
+    }
+    100%{
+        transform: translate(-50%,130px);
+    }
+}

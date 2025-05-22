@@ -1,0 +1,127 @@
+.WorkPlace{
+    width: 100%;
+    height: 100vh;
+}
+.WorkPlace main{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 90px);
+    height: 100%;
+}
+.Create-new-work{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+}
+.Create-new-work ul{
+    display: flex;
+    list-style-type: none;
+}
+.Create-new-work ul >li{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: 2px solid rgba(106, 62, 247, 1);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: MainHeading;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.Create-new-work ul >li p{
+    position: absolute;
+    right: 10px;
+    width: fit-content;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(164, 164, 164);
+    border-radius: 50%;
+}
+.Create-new-work button{
+    height: 40px;
+    width: 40px;
+    color: rgba(106, 62, 247, 1);
+    background-color: transparent;
+    border: 0;
+}
+.Display-Work{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin-top: 50px;
+    height: calc(88%);
+}
+.Display-Work >section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ width: 32%;
+ height: 100%;
+}
+.Display-Work >section > div{
+    border: 2px solid rgba(106, 62, 247, 1);
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 40px 30px;
+}
+.Display-Work >section >:nth-child(2){
+    margin-top: 15px;
+}
+.Display-Work >section > div h3{
+    font-family: MainHeading;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.Display-Work >section > div h4,.Display-Work section > div label{
+    font-family: MainHeading;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.Display-design{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Manage-code{
+    overflow-y: scroll;
+    font-family: handwrittefont;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+.Manage-code >section{
+    color: rgb(170, 141, 0);
+}
+.Code-Main{
+    width: 100%;
+    height: 80%;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: rgb(0, 204, 255);
+    border: 0;
+    outline: none;
+    /* background-color: brown; */
+    overflow-x: scroll;
+    resize: none;
+    white-space: pre;
+    overflow-wrap: normal;
+    word-wrap: normal;
+}

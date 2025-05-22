@@ -1,0 +1,115 @@
+.CreatePack{
+    width: 600px;
+    font-family: MainHeading;
+    height: 400px;
+    background-color:rgba(106, 62, 247, 1) ;
+    padding: 40px 40px;
+    border-radius:15px ;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: calc(50%);
+    transform: translate(-50% , -50%);
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    color: white;
+}
+.CreatePack > h1{
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.Select-Work{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.Select-Work > samp{
+  color: white;
+  width: 35%;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid rgba(255, 135, 231, 1);
+  font-family: MainHeading;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Select-Work > p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  font-size: 30px;
+}
+.Select-Work > select{
+  color: white;
+  width: 60%;
+  font-family: MainHeading;
+  background-color: transparent;
+  border: 1px solid rgba(255, 135, 231, 1);
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+}
+.Select-Work > select:focus{
+  background-color: rgba(106, 62, 247, 1) ;
+}
+.Add-details{
+  margin-bottom: 5px;
+}
+.Add-details >div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 45%;
+}
+.Add-details >div label{
+  letter-spacing: 2px;
+}
+.Add-details >div input{
+  color: white;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid white;
+  margin: 0 5px;
+}
+.Make-Id{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Make-Id > img{
+  width: 80px;
+  height: 80px;
+}
+.Make-Id > h2{
+  white-space: pre;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  margin: 0 20px;
+  font-size: 50px;
+  letter-spacing: 6px;
+}
+.Make-pack-btn{
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+.Make-pack-btn button{
+  font-size: 18px;
+  width: fit-content;
+  font-family: MainHeading;
+  font-weight: 100;
+  /* background-color: transparent; */
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline; */
+  border: 0;
+  padding: 10px 20px;
+}

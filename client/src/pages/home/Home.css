@@ -1,0 +1,133 @@
+.Home1 {
+  width: 100%;
+  height: 100vh;
+}
+.Home1 main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.HomeLeft {
+  position: relative;
+  /* overflow: hidden; */
+  width: 50%;
+  height: 100%;
+}
+.structured {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    230deg,
+    rgba(134, 91, 222, 1) 0%,
+    rgba(104, 65, 232, 1) 48%,
+    rgba(77, 47, 181, 1) 100%
+  );
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+}
+.MainContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  padding: 50px 80px;
+}
+.Top-47 {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(
+    40deg,
+    rgba(177, 176, 190, 0),
+    rgba(177, 176, 190, 0.75)
+  );
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 6% 100%);
+  filter: blur(50px);
+}
+.CompanyLogo {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+.MainContent h1 {
+  font-family: MainHeading;
+  margin: 40px 0;
+  font-size: 80px;
+  letter-spacing: 4px;
+  color: white;
+}
+.MainContent p {
+  font-family: handwrittefont;
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+}
+.MainContent > section {
+  display: flex;
+  margin: 75px 0;
+}
+.MainContent > section > a , .MainContent > section >button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: MainHeading;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  border: 0;
+  width: 170px;
+  height: 55px;
+  margin-right: 25px;
+  border-radius: 16px;
+}
+.MainContent > section :first-child {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  background-color: rgba(106, 62, 247, 1);
+}
+.MainContent > section :last-child {
+  background-color: rgba(81, 169, 215, 1);
+}
+.HomeRight {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+.HomeRight header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 90px;
+  padding-right: 40px;
+}
+.HomeRight header a {
+    font-size: 20px;
+  font-family: SubHeading;
+  letter-spacing: 4px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.HomeRight img {
+  width: 850px;
+  height: 550px;
+}

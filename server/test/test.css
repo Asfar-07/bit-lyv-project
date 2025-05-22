@@ -1,0 +1,22 @@
+.card-title {
+  font-size: 1.2em;
+}
+
+#footer {
+  background: black;
+}
+
+.container {
+  padding: 20px;
+}
+.container::after {
+  color: white;
+}
+
+#main-header {
+  background: blue;
+}
+
+.main{
+  background: blue;
+}

@@ -1,0 +1,132 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .Login h1,.Login h2{
+    font-family:MainHeading ;
+    letter-spacing: 2px;
+  }
+  .Login >p{
+    font-family: handwrittefont;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  .container1 {
+    position: relative;
+    width: 70%;
+    height: 550px;
+  }
+  
+  .container1 .frontDiv {
+    width: 50%;
+    height: 530px;
+    background: linear-gradient( rgba(135, 91, 222, 0.833) 0%,
+    rgba(104, 65, 232, 0.766) 48%,
+    rgba(76, 47, 181, 0.868) 100%),
+      url(../../assets/images/loginbg.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100% 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.527);
+  }
+  /* @font-face {
+    font-family: myFont;
+    src: url(/images/Super\ Squad.ttf);
+  } */
+  .frontDiv p {
+    text-align: center;
+    margin: 0px 10px;
+  }
+  .frontDiv h1 {
+    margin: 3px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    font-size: 40px;
+  }
+  .sepfond p {
+    font-size: 18px;
+  }
+  .container1 .backDiv {
+    width: 50%;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Behind frontDiv */
+    animation: moveFrontDiv 1.5s ease-in-out forwards;
+  }
+  .backDiv h2 {
+    margin-bottom: 50px;
+    color: rgb(0, 119, 255);
+    display: flex;
+    justify-content: center;
+  }
+  .backDiv input {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(240, 240, 240);
+    border: 0;
+    border-radius: 2px;
+  }
+  .singup-part {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+  }
+  .singup-part div {
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: MainHeading;
+  }
+  .singup-part a {
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: handwrittefont;
+  }
+  .loginpart {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .loginpart button {
+    padding: 10px 100px;
+    border: 0;
+    color: white;
+    background-color: rgb(70, 70, 248);
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  @keyframes moveFrontDiv {
+    0% {
+      transform: translateX(0) translateY(0);
+      box-shadow: none;
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

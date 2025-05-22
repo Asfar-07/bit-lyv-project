@@ -1,0 +1,96 @@
+.SearchingPage {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(226, 43, 43); */
+}
+.sidevector1 {
+  position: absolute;
+  top: -60px;
+  left: -250px;
+  background-color: rgba(106, 62, 247, 1);
+  width: 200px;
+  height: 200px;
+  transform: rotate(-120deg);
+}
+.sidevector2 {
+  position: absolute;
+  bottom: -60px;
+  right: -250px;
+  background-color: rgba(106, 62, 247, 1);
+  width: 200px;
+  height: 200px;
+  transform: rotate(-120deg);
+}
+.SearchingPage main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 550px;
+  /* background-color: blue; */
+}
+.SearchingPage main > h2 {
+  font-family: SubHeading;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.SearchingPage label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.SearchingPage label > input {
+  width: 90%;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid rgba(82, 47, 149, 1);
+  padding-left: 20px;
+}
+.SearchingPage label > button {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background-color: transparent;
+  margin-left: 20px;
+  font-size: 50px;
+  color: rgba(0, 0, 146, 1);
+}
+.SearchingPage label > input::placeholder {
+  font-family: MainHeading;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: black;
+}
+.AmountCounter {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.AmountCounter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  width: 20%;
+  height: 180px;
+  font-family: MainHeading;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 19px;
+}
+.AmountCounter > div img {
+  width: 100px;
+  height: 100px;
+}

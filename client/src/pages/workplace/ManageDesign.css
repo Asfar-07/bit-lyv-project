@@ -1,0 +1,106 @@
+.Manage-Design >select{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+.Make_idname{
+    margin-top: 30px;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(208, 208, 208);
+}
+.Make_idname button{
+    color: white;
+    height: 100%;
+    border: 0;
+    background-color: rgb(75, 75, 75);
+    width: 25px;
+    cursor: pointer;
+}
+.Make_idname input{
+    width: calc(100% - 25px);
+    height: 100%;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    padding: 010px;
+}
+.Modify-structure{
+    display: flex;
+    margin-top: 30px;
+}
+.Modify-structure > div{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.Modify-structure > div input{
+    width: 40%;
+    height: 25px;
+}
+.make-after , .make-before{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.Design-Button{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+.Design-Button button{
+    width: 200px;
+    border: 0;
+    height: 40px;
+    background-color: #892be28a;
+    color: white;
+}
+.Fill-Color{
+   margin-top: 20px;
+}
+
+.Fill-Color section, .Font-area section{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.Fill-Color section >input , 
+.Font-area section >input , 
+.Font-area section > select{
+    border: 0;
+    outline: 0;
+    padding: 0 10px;
+}
+.Fill-Color  section>input[type=number]::-webkit-outer-spin-button ,.Font-area  section>input[type=number]::-webkit-outer-spin-button  ,
+.Fill-Color section>input[type=number]::-webkit-inner-spin-button, .Font-area section>input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+  margin: 0;
+}
+.Fill-Color section >input:hover{
+    border: 0;
+    outline: 0;
+}
+#Pick-Color,#Pick-Color-Font{
+    width: 20%;
+    height: 100%;
+}
+#Pick-Color-Hex,#Pick-Color-Hex-Font{
+    width: 60%;
+    height: 100%;
+}
+#Pick-Opacity,#Pick-Font_size{
+    width: 15%;
+    height: 100%;
+}
+.Fill-Color section >p{
+    width: 5%;
+    
+}
