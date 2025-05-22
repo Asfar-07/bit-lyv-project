@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./CreatePack.css";
 import IDChip from "../../assets/images/IDchip.png";
 import axios from "axios";
-import config from '../../config.json'
+
 
 const CreatePack = ({ IdValue, GetPackData, Library }) => {
   const [newbutton, setNewButton] = useState(true);
@@ -15,7 +15,7 @@ const CreatePack = ({ IdValue, GetPackData, Library }) => {
   useEffect(() => {
     if (Library) {
       axios
-        .post(config.backendURL+"/librarypart", Library, {
+        .post(process.env.REACT_APP_API_URL+"/librarypart", Library, {
           headers: {
             "Content-Type": "application/json",
           },

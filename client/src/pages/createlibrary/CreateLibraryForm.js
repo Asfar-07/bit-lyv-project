@@ -3,7 +3,6 @@ import React ,{useEffect, useState} from 'react'
 import axios from "axios"
 import {useNavigate} from "react-router-dom"
 import { URData } from "../../redux/StoreURData";
-import config from '../../config.json'
 
 const CreateLibraryForm = ({setDispay,userdata}) => {
  const MoveTO=useNavigate('/')
@@ -30,9 +29,10 @@ const CreateLibraryForm = ({setDispay,userdata}) => {
     finaldata.username=userdata.UserName
     finaldata.userid=userdata._id
     // console.log("Form submitted:", formData);
-     axios.post(config.backendURL+"/makelibrary",formData,{
+     axios.post(process.env.REACT_APP_API_URL+"/makelibrary",formData,{
       headers:{
         "Content-Type":"application/json"
+
       }
     }).then((Response)=>{
       MoveTO('/Account')

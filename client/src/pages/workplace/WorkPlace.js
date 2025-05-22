@@ -7,7 +7,6 @@ import ManageDesign from "./ManageDesign";
 import CreatePack from "../createpack/CreatePack";
 import { useSelector, useDispatch } from "react-redux";
 import ControlWorkPlace from "../../components/workplaceFunc/Control-WorkPlace";
-import config from '../../config.json'
 import { getLiraryId_local } from "../../redux/StoreURData";
 import {
   CollectPack,
@@ -137,7 +136,7 @@ export default React.memo(function WorkPlace() {
       value.PackName = value.selected;
       axios
         .post(
-          config.backendURL+"/collectstyle",
+          process.env.REACT_APP_API_URL+"/collectstyle",
           { libdata: Library, selector: value.selected },
           {
             headers: {
@@ -186,7 +185,7 @@ export default React.memo(function WorkPlace() {
       collectdata.libdata = Library;
       collectdata.style = arrstyle;
       axios
-        .post(config.backendURL+"/addpack", collectdata, {
+        .post(process.env.REACT_APP_API_URL+"/addpack", collectdata, {
           headers: {
             "Content-Type": "application/json",
           },

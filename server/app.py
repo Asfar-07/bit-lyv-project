@@ -7,7 +7,7 @@ from dotenv  import dotenv_values
 
 config=dotenv_values('.env')
 app = Flask(__name__)
-CORS(app,origins=[config["FORT_END_URL"]])
+CORS(app)
 
 
 @app.route('/', methods=['GET'])

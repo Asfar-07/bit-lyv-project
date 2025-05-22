@@ -6,7 +6,6 @@ import { setURData } from '../../redux/StoreURData'
 import "./Login.css"
 import SmallLoading from '../../components/loadingscreen/SmallLoading'
 import HeaderPopUp from "../../components/popup/HeaderPopUp"
-import config from "../../config.json"
 
 export default function Login() {
   const [signup,setSignup]=useState(false)
@@ -22,7 +21,7 @@ export default function Login() {
   function onHandleSignUp(e){
     
     setLoading(true)
-    axios.post(config.backendURL+"/signup",{ UserName: username,Email:email,Password:password },{
+    axios.post(process.env.REACT_APP_API_URL+"/signup",{ UserName: username,Email:email,Password:password },{
       headers:{
         "Content-Type":"application/json"
       }
@@ -51,7 +50,7 @@ export default function Login() {
   }
   function onHandleLogin(){
     setLoading(true)
-    axios.post(config.backendURL+"/login",{ Email:email,Password:password },{
+    axios.post(process.env.REACT_APP_API_URL+"/login",{ Email:email,Password:password },{
       headers:{
         "Content-Type":"application/json"
       }

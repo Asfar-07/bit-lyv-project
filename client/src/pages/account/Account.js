@@ -9,7 +9,6 @@ import { setLiraryId } from "../../redux/StoreURData";
 import { useNavigate } from "react-router-dom";
 import SmallLoading from '../../components/loadingscreen/SmallLoading'
 import HeaderPopUp from "../../components/popup/HeaderPopUp";
-import config from "../../config.json"
 // import SearchPage from "../home/SearchPage";
 
 export default function Account() {
@@ -37,7 +36,7 @@ export default function Account() {
       setLoading(true)
       axios
         .post(
-          config.backendURL+"/collectpack",
+          process.env.REACT_APP_API_URL+"/collectpack",
           { data: URData._id },
           {
             headers: {
@@ -122,7 +121,7 @@ export default function Account() {
               <div className="CollectionPack" key={Index}>
                 <div>
                   <a
-                    href={`${config.backendURL}/${value.cdn}${value.name}.${value.packtype}`}
+                    href={`${process.env.REACT_APP_API_URL}/${value.cdn}${value.name}.${value.packtype}`}
                   >
                     {value.packtype}
                   </a>
@@ -141,7 +140,7 @@ export default function Account() {
                     ></i>
                   </div>
                   <a
-                    href={`${config.backendURL}/${value.cdn}${value.name}.${value.packtype}`}
+                    href={`${process.env.REACT_APP_API_URL}/${value.cdn}${value.name}.${value.packtype}`}
                   >
                     <i
                       style={{
@@ -155,7 +154,7 @@ export default function Account() {
                   </a>
                 </div>
                 <a
-                  href={`${config.backendURL}/${value.cdn}${value.name}.${value.packtype}`}
+                  href={`${process.env.REACT_APP_API_URL}/${value.cdn}${value.name}.${value.packtype}`}
                 >
                   {value.name}
                 </a>

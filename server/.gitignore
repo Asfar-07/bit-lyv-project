@@ -2,6 +2,6 @@
 .env.local
 .env*.local
 .env*.example 
-packs/
+# packs/
 __pycache__/
 *.py[cod]      
