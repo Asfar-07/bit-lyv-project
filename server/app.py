@@ -10,9 +10,6 @@ config=dotenv_values('.env')
 app = Flask(__name__)
 CORS(app,origins=[os.getenv("FORT_END_URL")])
 
-with open("packs/carlo/don.css", "r", encoding="utf-8") as file:
-        css = file.read()
-        print(css)
 @app.route('/', methods=['GET'])
 def Home():
     if request.method=="GET":

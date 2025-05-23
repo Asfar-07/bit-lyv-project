@@ -105,7 +105,7 @@ def collectstyle(data):
 
     # Target selector (e.g. ".container", "#main")
     target_selector = data['selector']
-    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype'].casefold()}."
+    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype'].casefold()}"
     # Read the CSS file
     with open(css_path, "r", encoding="utf-8") as file:
         css = file.read()
