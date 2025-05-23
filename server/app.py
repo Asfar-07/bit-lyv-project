@@ -4,10 +4,11 @@ from components.UserControl import ControlLogin,ControlSign
 from components.PackControl import CreateLibrary,CollectPack,LibComponents,setpacktolibrary,collectstyle
 from pathlib import Path
 from dotenv  import dotenv_values
+import os
 
 config=dotenv_values('.env')
 app = Flask(__name__)
-CORS(app)
+CORS(app,origins=[os.getenv("FORT_END_URL")])
 
 
 @app.route('/', methods=['GET'])
