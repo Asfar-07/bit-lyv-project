@@ -43,7 +43,7 @@ def CollectPack(data):
     return {'message':"Some Server Erorr",'status':False}
 
 def LibComponents(data):
-    filepath=data['cdn']+data['name']+'.'+data['packtype']
+    filepath=data['cdn']+data['name']+'.'+data['packtype'].casefold()
     with open(filepath, "r", encoding="utf-8") as file:
         css_content = file.read()
 
@@ -69,8 +69,7 @@ def LibComponents(data):
 
 def setpacktolibrary(data):
     # Path to your CSS file
-    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype']}"
-
+    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype'].casefold()}"
     # Your full new content (including pseudo-selectors)
     new_content = data['style']
 
@@ -106,7 +105,7 @@ def collectstyle(data):
 
     # Target selector (e.g. ".container", "#main")
     target_selector = data['selector']
-    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype']}"
+    css_path =f"{data['libdata']['cdn']}{data['libdata']['name']}.{data['libdata']['packtype'].casefold()}."
     # Read the CSS file
     with open(css_path, "r", encoding="utf-8") as file:
         css = file.read()
