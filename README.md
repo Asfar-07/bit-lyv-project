@@ -1,6 +1,6 @@
 ## Bit Lyv ✨
 
-[![Live Demo](https://bit-lyv.vercel.app) ](just a trial)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Visit%20Now-brightgreen)](https://bit-lyv.vercel.app) |
 A full-stack platform for creating, versioning, and sharing reusable CSS/JS libraries with CDN-style URLs.
 
 ## Features ✨
