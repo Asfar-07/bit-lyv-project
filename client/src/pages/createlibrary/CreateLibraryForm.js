@@ -129,9 +129,9 @@ const CreateLibraryForm = ({setDispay,userdata}) => {
             onChange={handleChange}
             required
           >
-            <option value="CSS">CSS</option>
-            <option value="JS">JS</option>
-            <option value="PYTHON">PYTHON</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            <option value="py">PYTHON</option>
           </select>
         </div>
 

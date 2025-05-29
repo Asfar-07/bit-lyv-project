@@ -56,6 +56,7 @@ export default function Home() {
       <main className="mainHome" ref={pointer}>
         <aside className="HomeLeft">
           <div className="structured" ref={animateElement}>
+            <div className="Top-47"></div>
             <main ref={AboutHolder}>
               <div className="left3D" ref={left3D}>
                 <div>
@@ -80,7 +81,6 @@ export default function Home() {
           </div>
           <div className="MainContent" ref={MainContent}>
             <div className="CompanyLogo"></div>
-            <div className="Top-47"></div>
             <h1>
               Hello,<br></br>Designer
             </h1>
@@ -89,7 +89,7 @@ export default function Home() {
               package. don’t worry this web site help you
             </p>
             <section>
-              {URData ? <a href="/Account">get start</a>: <a href="/Account">get start</a>}
+              {URData ? <a href="/Account">get start</a>: <a href="/Login">get start</a>}
               {URData ? <button onClick={()=>{dispatch(removeURData())}}>logout</button>:<a href="/Login">login</a>}
             </section>
           </div>

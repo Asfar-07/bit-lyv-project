@@ -14,7 +14,7 @@ def CreateLibrary(data):
         val=(randomid,data["url"],data["name"],data["description"],data['visibility'],data['packType'],data['userid'])
         mycursor.execute(sql, val)
         mydb.commit()
-        if(data['packType']=='CSS'):
+        if(data['packType']=='css'):
             open("packs/"+data['username']+"/"+data['name']+".css",'x')
         return {'message':"Created new pack",'status':True}
     except mysql.connector as err:

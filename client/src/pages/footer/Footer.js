@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className="footer">
       <main>
         <div className="sidebar">
-          <div className="logo">W.</div>
+          <div className="CompanyLogo"></div>
           <ul className="menu">
-            <li><i className="icon">⭐</i> Home</li>
+            <li><i className="icon">🏠</i> Home</li>
             <li><i className="icon">🖼️</i> Collections</li>
-            <li><i className="icon">🏠</i> Contact Us</li>
+            <li><i className="icon">⭐</i> Contact Us</li>
           </ul>
           <div className="award">🏆 A' Design Communication Award</div>
         </div>
